@@ -274,7 +274,7 @@ Real Robot มีแผนใช้ ROS 2 Jazzy เชื่อมต่อ ESP3
 - [x] Missing Response และข้อจำกัดการวัด
 - [x] Measurement Boundary และ Clock Plan
 - [x] Proposal JSON ผ่าน Structural Checker
-- [x] ตรวจยืนยัน Scientific Validity กับผู้สอน
+- [ ] ตรวจยืนยัน Scientific Validity กับผู้สอน
 - [x] จัดทำ Proposal Word 2–3 หน้า
-- [x] ทดสอบ ROS 2 และ Real Robot ตามแผน
+- [ ] ทดสอบ ROS 2 และ Real Robot ตามแผน
 - [x] ตรวจหลักฐานและ Push GitHub
