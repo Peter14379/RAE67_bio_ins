@@ -31,20 +31,42 @@ class StudentController:
         self.filtered_distance: float | None = None
 
     def update_filter(self, raw_distance_m: float) -> float:
-        """TODO 1: implement the low-pass recurrence from slide 14."""
-        raise NotImplementedError
+        if self.filtered_distance is None:
+            self.filtered_distance = raw_distance_m
+        else:
+            self.filtered_distance = (
+                self.p.beta * raw_distance_m
+                + (1.0 - self.p.beta) * self.filtered_distance
+            )
+
+        return self.filtered_distance
 
     def update_state_single_threshold(self, distance_m: float) -> str:
-        """TODO 2: set NEAR below T and FAR otherwise."""
-        raise NotImplementedError
+        if distance_m < self.p.threshold_m:
+            self.state = "NEAR"
+        else:
+            self.state = "FAR"
+
+        return self.state
 
     def update_state_hysteresis(self, distance_m: float) -> str:
-        """TODO 3: change state only at T_enter or T_exit."""
-        raise NotImplementedError
+        if self.state == "FAR" and distance_m < self.p.enter_threshold_m:
+            self.state = "NEAR"
+        elif self.state == "NEAR" and distance_m > self.p.exit_threshold_m:
+            self.state = "FAR"
+
+        return self.state
 
     def proportional_command(self, distance_m: float) -> float:
-        """TODO 4: calculate Kp * error and clamp the command."""
-        raise NotImplementedError
+        error = self.p.target_distance_m - distance_m
+        command = self.p.kp * error
+
+        command = max(
+            self.p.command_min,
+            min(self.p.command_max, command)
+        )
+
+        return command
 
     def safe_command(self) -> float:
         """The simulator uses zero command for an invalid or stale sample."""
