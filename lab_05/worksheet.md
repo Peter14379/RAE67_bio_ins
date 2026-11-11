@@ -356,7 +356,7 @@ Paired-product Pearson ที่ใช้ใน `contact_demo.py` เป็น *
 - [x] Config / Manifest จากการทดลอง
 - [x] รายงาน Lab 05 จำนวน 3 หน้า พร้อมกราฟ 2 รูป
 - [x] คำสั่งสำหรับทำซ้ำและ Python Version
-- [ ] Push ไฟล์ทั้งหมดขึ้น GitHub และตรวจสถานะ Repository
+- [x] Push ไฟล์ทั้งหมดขึ้น GitHub และตรวจสถานะ Repository
 
 ### 6.4 คำสั่งสำหรับทำซ้ำ
 

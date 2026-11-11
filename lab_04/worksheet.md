@@ -254,7 +254,7 @@ Lab 04 ไม่ได้จำลอง CPG หรือ gait โดยตร�
 - [x] extreme CSV 4 files
 - [x] metrics
 - [x] handoff mapping
-- [ ] plots
-- [ ] report 1–2 หน้า
-- [ ] บันทึกคำสั่งรันซ้ำ
-- [ ] commit / code version ที่ใช้ส่ง
+- [x] plots
+- [x] report 1–2 หน้า
+- [x] บันทึกคำสั่งรันซ้ำ
+- [x] commit / code version ที่ใช้ส่ง

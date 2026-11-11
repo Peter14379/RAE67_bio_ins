@@ -308,9 +308,9 @@ Touch ถูก Recognized ภายหลังที่ 7.06 s ขณะที
 - [x] วิเคราะห์ Conflict, Fallback, Quiet และ Recovery
 - [x] ตรวจ Replay จาก CSV ต้นฉบับและพบ MATCH ทั้ง Raw/Events
 - [x] รันบนเครื่องผู้จัดทำและสร้าง Raw CSV, Events, Metrics, Config และ Manifest ใน `results/completed` และ `results/replay`
-- [ ] แนบกราฟจาก `trace_C0_r01.svg` และ `trace_C1_r01.svg`
-- [ ] จัดทำรายงาน Word 1–2 หน้า
-- [ ] Commit และ Push งานขึ้น GitHub
+- [x] แนบกราฟจาก `trace_C0_r01.svg` และ `trace_C1_r01.svg`
+- [x] จัดทำรายงาน Word 1–2 หน้า
+- [x] Commit และ Push งานขึ้น GitHub
 
 **คำสั่งรันบน Windows**
 
