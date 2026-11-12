@@ -92,7 +92,7 @@ class Interaction(TraceNode):
         servo.layout.dim=[dimension]; servo.layout.data_offset=0
         rgb=ColorRGBA(); rgb.r=row['rgb_r']; rgb.g=row['rgb_g']; rgb.b=row['rgb_b']; rgb.a=1.
         duration=time.perf_counter_ns()-started
-        for name,msg,payload in (('interaction',interaction,interaction.data),('emotion',emotion,emotion.data),('servo_command',servo,servo.data),('rgb_command',rgb,[rgb.r,rgb.g,rgb.b,rgb.a])):
+        for name,msg,payload in (('interaction',interaction,interaction.data),('emotion',emotion,emotion.data),('servo_command',servo,list(servo.data)),('rgb_command',rgb,[rgb.r,rgb.g,rgb.b,rgb.a])):
             self.record('publish','/lamp/'+name,{'data':payload,'fault_channels':row['fault_channels'],'receipt_freshness_only':True},duration)
             self.pubs[name].publish(msg)
 
