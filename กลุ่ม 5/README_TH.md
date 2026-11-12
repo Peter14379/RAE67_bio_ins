@@ -1,4 +1,10 @@
-# Robot Lamp V1.0 — VS Code + PlatformIO (ESP32)
+# กลุ่ม 5 — Robot Lamp V1.0 (VS Code + PlatformIO / ESP32)
+
+## สมาชิกกลุ่ม
+
+- **6752500070** — ปีเตอร์ ประสิทธิพร
+- **6752500088** — จิรัชยา พลเยี่ยม
+- **6752500142** — ปิติลาภ วสุวัต
 
 โปรเจกต์โคมไฟแสดงอารมณ์ ใช้ ESP32-WROOM-32, Waveshare Bus Servo Adapter (A) และเซอร์โว 4 ตัว
 แนวคิดการแบ่ง Emotion → Animation/LED อ้างอิงจาก https://github.com/autonomous-ai/lampOS
