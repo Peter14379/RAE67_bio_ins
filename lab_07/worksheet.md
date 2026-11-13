@@ -186,6 +186,21 @@ Replay จากต้นฉบับ `results/completed_run/C1_r02/input_trace.
 
 แสดงว่าผลลัพธ์ทั้งสองไฟล์ตรงกับต้นฉบับแบบ Byte-for-byte ภายใต้การรันครั้งนี้
 
+### 4.5 Fresh Offline Rerun — 13/11/2569
+
+รัน `offline_lab.py` จาก repository นี้โดยตรง ด้วย `completed_policy.py`, C0/C1,
+สาม paired seeds (41–43) และ 22 s ต่อ trial ได้ผลครบ 6 trials ผลเป็นการจำลอง
+synthetic transport ใน process เดียว ไม่ใช่ ROS/DDS หรือการวัดหุ่นยนต์จริง
+
+| Seed | C0 Pass/7 | C1 Pass/7 | C0 Fault Ticks | C1 Fault Ticks | C1 Dropped | C1 Out-of-order |
+|---|---:|---:|---:|---:|---:|---:|
+| 41 | 7 | 6 | 20 | 54 | 257 | 1413 |
+| 42 | 7 | 6 | 20 | 81 | 287 | 1421 |
+| 43 | 7 | 7 | 20 | 56 | 300 | 1393 |
+
+เก็บ raw traces, per-trial metrics/config, report และ SHA-256 manifest ไว้ที่
+`lab_07/results/actual_run_20261113/` โดยคง missing responses ไว้ ไม่แทนเป็นศูนย์
+
 ## 5. Invalid/Stale Probe และ Communication Stress
 
 Baseline Invalid/Stale Probe เป็นเหตุการณ์จำลองสำหรับตรวจการทำงานของ Fault Handling เช่น ข้อมูลเซนเซอร์ผิดรูปแบบหรือข้อมูลหมดอายุ ซึ่งมีอยู่ในทั้งสอง Conditions
