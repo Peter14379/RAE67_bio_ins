@@ -2,10 +2,6 @@
 
 เชื่อมแบบจำลอง Week03–04 ให้รันได้จริง แล้วทดสอบว่า hormone path ทำให้ command, CPG และการเคลื่อนที่ใน kinematic model เปลี่ยนอย่างไร เทียบ fixed/direct path และ binding ablation
 
-## วิดีโอประกอบ
-
-[ชมวิดีโอ Lab 05 บน YouTube](https://youtube.com/shorts/WeG5xWNiNc0?feature=share)
-
 **ทุกตัวเลข robot/controller/timing ใน Lab นี้เป็น proposed course model** อ้างอิง architecture และโจทย์จาก [Ngamkajornwiwat et al. (2020), IEEE Access Article 9088155](https://ieeexplore.ieee.org/abstract/document/9088155) แต่ไม่ได้ reproduce MNLC, hormone-to-MI recurrence, terrain dynamics หรือผล robot ใน paper อ่าน [SOURCES.md](SOURCES.md) ก่อนตีความผล
 
 ## เริ่มบนเครื่องใหม่

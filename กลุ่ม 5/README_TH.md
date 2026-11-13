@@ -9,6 +9,10 @@
 โปรเจกต์โคมไฟแสดงอารมณ์ ใช้ ESP32-WROOM-32, Waveshare Bus Servo Adapter (A) และเซอร์โว 4 ตัว
 แนวคิดการแบ่ง Emotion → Animation/LED อ้างอิงจาก https://github.com/autonomous-ai/lampOS
 
+## วิดีโอนำเสนอ
+
+[ชมวิดีโอโครงงาน Robot Lamp บน YouTube](https://youtube.com/shorts/WeG5xWNiNc0?feature=share)
+
 ## ใช้ Arduino หรือ ESP32?
 
 - **ESP32** = ชิป/บอร์ดควบคุม (ฮาร์ดแวร์)
